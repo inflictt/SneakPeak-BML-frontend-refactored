@@ -10,3 +10,5 @@ npm install
 npm run dev
 ```
 Navigate to `http://localhost:5173/` to run the development server.
+
+<!-- Trigger rebuild -->
