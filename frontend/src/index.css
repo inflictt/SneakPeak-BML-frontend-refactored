@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #F2EEE5;
+  --bg-2: #E9E4D8;
+  --panel: #F8F5EE;
+  --line: rgba(25, 19, 9, 0.14);
+  --line-2: rgba(25, 19, 9, 0.24);
+  --line-3: rgba(25, 19, 9, 0.35);
+
+  --ink: #191309;
+  --ink-2: rgba(25, 19, 9, 0.68);
+  --ink-dim: rgba(25, 19, 9, 0.55);
+  --muted: rgba(25, 19, 9, 0.45);
+}
+
+html[data-theme="dark"] {
+  --bg: #131009;
+  --bg-2: #221C13;
+  --panel: #1C1710;
+  --line: rgba(237, 232, 220, 0.14);
+  --line-2: rgba(237, 232, 220, 0.24);
+  --line-3: rgba(237, 232, 220, 0.35);
+
+  --ink: #EDE8DC;
+  --ink-2: rgba(237, 232, 220, 0.68);
+  --ink-dim: rgba(237, 232, 220, 0.55);
+  --muted: rgba(237, 232, 220, 0.45);
+}
+
+@theme {
+  --color-bg: var(--bg);
+  --color-bg-2: var(--bg-2);
+  --color-panel: var(--panel);
+  --color-line: var(--line);
+  --color-line-2: var(--line-2);
+  --color-line-3: var(--line-3);
+
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-dim: var(--ink-dim);
+  --color-muted: var(--muted);
+
+  --color-ember: #FF4A0E;
+  --color-ember-2: #FF6633;
+  --color-ember-deep: #D03E0B;
+  --color-ember-soft: rgba(255, 74, 14, 0.08);
+
+  --color-blue-accent: #2946D8;
+  --color-blue-accent-soft: rgba(41, 70, 216, 0.08);
+  
+  --color-dark-section: #17120C;
+  --color-dark-ink: #EDE8DC;
+  --color-dark-ink-dim: rgba(237, 232, 220, 0.55);
+
+  --color-good: #2E7D32;
+  --color-danger: #D32F2F;
+
+  --font-display: 'Anton', sans-serif;
+  --font-serif: 'Instrument Serif', serif;
+  --font-body: 'Space Grotesk', sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    transition: background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease;
+  }
+}
